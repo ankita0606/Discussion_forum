@@ -1,0 +1,44 @@
+{% extends 'mainapp/base.html'%}
+{% load crispy_forms_tags %}
+{% block content%}
+<style>
+.card {
+
+     max-width:300px;
+    margin: auto;
+  text-align: center;
+}
+</style>
+<div class="container mt-3">
+	<!--
+	<div class='media'>
+		<div class="row">
+			<div class="col-md-3">
+				<img style="width: 100px; height: 110px" class="img thumbnail" src="{{ user.profile.image.url }}" ></img>
+	    
+	    	</div>
+        </div>
+		<div class="media-body border bg-dark" style="padding: 15px">
+		    <h3 class="account-heading text-light">Username: <small>{{user.username}}</small></h3>
+		    <h3 class="account-heading text-light">Email: <small>{{user.email}}</small></h3>
+		</div>		
+	</div>
+	<a class="btn btn-info" href="{% url 'updateprofile' %}" role="button">Update Profile</a>
+		-->
+<div class="row">
+  <div class="col-md-6">
+	<div class="card" style=""width: 100px; height: 110px">
+      <span class="border border-dark">
+  <img src="{{ user.profile.image.url }}" class=" card-img-top" style="width: 300px; height: 210px"></span>
+  <div class="card-body">
+    <h5 class="card-title">{{user.username}}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>mu
+  <div class="card-body">
+    <a class="btn btn-info" href="{% url 'updateprofile' %}" role="button">Update Profile</a>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+{% endblock content%}

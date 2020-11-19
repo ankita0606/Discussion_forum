@@ -1,0 +1,12 @@
+{% extends 'mainapp/base.html'%}
+{% block content%}
+<div class="container">
+    <div class="row">
+        <p style="font-size:3vw;">{{instance.question_text}}</p>
+    </div>
+    <div class="col-md-4">
+        <p style="font-size:2vw;">vote:{{instance.vote}}</p>
+    </div>
+
+</div>
+{% endblock content%}
