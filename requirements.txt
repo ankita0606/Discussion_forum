@@ -1,1 +1,5 @@
-Django~=2.2.4
+Django==2.2.15
+django-crispy-forms==1.9.2
+Pillow==7.2.0
+pytz==2020.1
+sqlparse==0.3.1
